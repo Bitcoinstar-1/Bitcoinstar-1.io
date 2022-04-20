@@ -24,13 +24,17 @@ const invest = () => {
   }
   if (verifyName($("#name")[0]) && verifyEmail($("#email")[0])) {
     $("#submit").addClass("loading")
+    let eq = ""
+    try {
+      ($("#equity")[0].value || "").trim()
+    } catch (e) {}
     $.ajax({
       url: (API + "/invest"),
       type: "PUT",
       data: {
         email: $("#email")[0].value.trim(),
         name: $("#name")[0].value.trim(),
-        equity: ($("#equity")[0].value || "").trim(),
+        equity: eq,
       },
       success: (data) => {
         onComplete()
