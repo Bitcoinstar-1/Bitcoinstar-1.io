@@ -6,7 +6,7 @@ body {
 .header.blur {
   backdrop-filter: blur(20px) saturate(200%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
-  background: rgba(0,0,0,0.8) !important;
+  background: rgba(0,0,0,0.6) !important;
 }
 
 .logo > h1 {
