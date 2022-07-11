@@ -20,7 +20,7 @@ const verifyName = (obj) => {
 
 const invest = () => {
   const onComplete = () => {
-    $(".splash")[0].innerHTML = "<h1>We are <span class='gradient-2'>changing</span> the way people wake up.</h1><br><h3>Your submission has been received! We'll be in touch.</h3>"
+    $(".splash")[0].innerHTML = "<h1>İnsanların uyandırıp Hayat şeklini <span class='gradient-2'>değiştiriyoruz</span>.</h1><br><h3>Gönderiminiz alındı! İletişimde olacağız.</h3>"
   }
   if (verifyName($("#name")[0]) && verifyEmail($("#email")[0])) {
     $("#submit").addClass("loading")
